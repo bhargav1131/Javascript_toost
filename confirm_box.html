@@ -1,0 +1,26 @@
+<!-- question_02 -->
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>displaying message in a confirm box</title>
+   </head>
+   <body>
+      <p>Click to proceed </p>
+      <form>
+         <input type="button" value="Click here" onclick="getConfirmation();">
+      </form>
+      <script>
+            function getConfirmation(){
+               var val = confirm("Do you want to continue ?");
+               if( val == true ){
+                  document.write ("User wants to continue!");
+                  return true;
+               }
+               else{
+                  document.write ("User does not want to continue!");
+                  return false;
+               }
+            }
+      </script>
+   </body>
+</html>

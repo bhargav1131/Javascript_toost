@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input</title>
+</head>
+<body>
+    <p>Select your favourite accessories: </p><br />
+    <input type="checkbox" name="print" value="Mobile" />Mobile<br />
+    <input type="checkbox" name="print" value="Tab" />Tab<br />
+    <input type="checkbox" name="print" value="Laptop" />Laptop<br />
+    <input type="checkbox" name="print" value="IPod" />IPod<br />
+    <p>
+        <input type="button" onclick="printChecked()" value="Print Selected Items" />
+    </p>
+  
+    <script>
+            function printChecked() {
+            var items = document.getElementsByName("print");
+            var selectedItems = "";
+            for (var i = 0; i < items.length; i++) {
+                   if (items[i].type == "checkbox" && items[i].checked == true) selectedItems += items[i].value + "\n";
+                }
+                alert("You selected :"+selectedItems);
+            }
+
+    </script>
+</body>
+</html>

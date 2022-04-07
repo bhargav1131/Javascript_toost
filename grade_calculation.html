@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- question_04 -->
+<html>
+<head>
+    <title>student Grading Calculate</title>
+</head>
+<body>
+    <form action="" name="grade">
+        <label for="no1">Enter the mark:</label>
+        <input type="number" name="no1">
+        <br><br>
+        <input type="button" value="Click to know your Grade" onclick="grading();">
+    </form>
+
+    <script>
+        function grading() {
+            var num = document.grade.no1.value;
+            if (num >= 90) {
+                document.write("Grade A");
+            }
+            else if (num >= 80) {
+                document.write("Grade B");
+            }
+            else if (num >= 70) {
+                document.write("Grade C");
+            }
+            else if (num >= 60) {
+                document.write("Grade D");
+            }
+            else {
+                document.write("Fail !");
+            }
+        }
+    </script>
+</body>
+</html>
