@@ -6,7 +6,7 @@
         </title>
     </head>
 <body>
-    <form action="" name="hello">
+    <!-- <form action="" name="hello">
         <label for="first">Enter first string</label>
         <input type="text" name="first">
         <br><br>
@@ -14,15 +14,17 @@
         <input type="text" name="second">
         <br><br>
         <input type="button" value="Concat the two strings" name="result" onclick="concat();">
-    </form>
+    </form> -->
     <script>
-        function concat(){
-            var str1 = document.hello.first.value;
-            var str2 = document.hello.second.value;
+      
+            // var str1 = document.hello.first.value;
+            var str1 = prompt("Enter 1st string");
+            var str2 = prompt("Enter 2nd string");
+            // var str2 = document.hello.second.value;
             var str = str1 +" "+ str2;
-            document.hello.result.value = str;
+            // document.hello.result.value = str;
             document.write(str);
-        }
+    
     </script>
 </body>
 </html>
